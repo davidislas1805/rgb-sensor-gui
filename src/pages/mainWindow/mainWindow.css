@@ -1,0 +1,279 @@
+:root {
+    --rgbStrokeColor: gray;
+    --left-panel: #111; /*#6875D9*/
+    --right-panel: #111; 
+    --div-wrapper-title: #D9DAD9;
+    --div-wrapper: linear-gradient(90deg, #7E7E7E 0%, #E3E3E3 25%, #787878 50%, #E3E3E3 75%, #7E7E7E 100%); /*D4D4EF*/
+    --rectBox-Background: #7F8A9C; /*524948*/
+    --text-color: white;
+    --rectBox-Text: black;
+    /* button Colors */
+    --button: white;
+    --button-hover:  #ddddddab;
+    --buttonWrapper: var(--div-wrapper);
+    /* Slider Colors */
+    --sliderWrapper: var(--div-wrapper);
+    --defaultTrackColor: white; /*linear-gradient(90deg, #844414 0%, #FCD5BE 25%, #CF7D52 50%, #FCD5BE 75%, #844414 100%)*/
+    --trackBeforeThumb: rgb(250, 150, 50); /*linear-gradient(90deg, #844414 0%, #C7801D 25%, #FFE233 50%, #C7801D 75%, #844414 100%)*/
+    --thumbColor: white;
+    --thumbColorHover: #ddddddab;
+    --markBefore: rgb(104, 117, 217, 0.2);
+}
+
+.right-Panel {
+    width: 70%;
+    height: 522px;
+    float: right;
+    background: var(--right-panel);
+}
+
+.left-Panel {
+    margin: auto;
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 522px;
+    background: var(--left-panel);
+}
+
+.divBorderLine {
+    position: absolute;
+    left: 30%;
+}
+
+.svgBorderLine {
+    width: 5px;
+    height: 522px;
+}
+
+.divContainer {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: var(--div-wrapper); */
+}
+
+.divWrapper {
+    height: 120px;
+    width: 180px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--div-wrapper);
+}
+
+.divWrapper > * {
+    display: inline-block;
+}
+
+.divSubWrapper {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    border-radius: 15px;
+    background-color: var(--left-panel);
+}
+
+.divSubWrapper2 {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--left-panel);
+}
+
+.divSubWrapper > * {
+    display: inline-block;
+}
+
+.divWrapperTitle {
+    width: 100%;
+}
+
+.spanWrapperTitle {
+    display: block;
+    width: 110px;
+    text-align: center;
+    margin-left: 25px;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    background: var(--div-wrapper-title);
+}
+
+.spanWrapper {
+    margin: 2px;
+}
+
+.rgbResultBox {
+    width: inherit;
+    height: inherit;
+    stroke: var(--rgbStrokeColor);
+    stroke-width: 2;
+}
+
+.svgRectWrapper {
+    width: 85px;
+    height: 85px;
+}
+
+.svgRgbResultBox {
+    width: inherit;
+    height: inherit;
+}
+
+.keyText {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.svgSerialBox {
+    width: 40px;
+    height: 25px;
+}
+
+.rectBox {
+    fill: var(--rectBox-Background);
+    width: 40px;
+    height: 25px;
+    /* display: inline; */
+    /* vertical-align: bottom; */
+}
+
+.rectBoxText {
+    font-size: 35;
+    font-weight: bold;
+    fill: var(--rectBox-Text);
+}
+
+
+.buttonContainer {
+    height: 120px;
+    width: 100%;
+    /* background: #ddd; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonWrapper {
+    background: var(--buttonWrapper);
+    height: 80px;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonWrapper > * {
+    vertical-align: middle;
+}
+
+#set-black {
+    height: 45px;
+    width: 110px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    outline: 0;
+    margin: 5px;
+    box-shadow: 0px 2px 2px lightgray;
+    color: var(--rectBox-Text);
+    /* font-weight: bold; */
+    background: var(--button);
+    transform: ease background-color 500ms;
+}
+
+#set-black:hover {
+    background: var(--button-hover);
+}
+
+.sliderContainer {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderWrapper {
+    width: 280px;
+    height: inherit;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--sliderWrapper);
+}
+
+.sliderWrapper > * {
+    display: inline-block;
+    text-align: center;
+}
+
+.sliderSubWrapper {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--left-panel);
+}
+
+.sliderSubWrapper > * {
+    display: block;
+}
+
+.customSlider {
+    max-width: inherit;
+    width: 240px;
+    /* line-height: 4px; */
+}
+  
+.customSlider-track {
+    /* Top value to align your track to the center of your thumb */
+    top: 0px;
+    bottom: 0px;
+    height: 4px;
+    /* thickness of the track */
+    position: relative;
+    /* default color of your track */
+    background: var(--defaultTrackColor);
+}
+  
+.customSlider-track.customSlider-track-0 {
+    /* color of the track before the thumb */
+    background: var(--trackBeforeThumb);
+}
+
+.customSlider-thumb {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    /*color for the thumb */
+    background: var(--thumbColor);
+    /* shape of the thumb: circle */
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /* remove default outline when selected */
+    outline: none;
+}
+  
+.customSlider-thumb:hover {
+    box-shadow: 0 0 0 8px var(--thumbColorHover);
+}
+
+.customSlider-mark.customSlider-mark-before {
+    background-color: var(--markBefore);
+}
+  
+.customSlider-mark.customSlider-mark-active {
+    display: none;
+}

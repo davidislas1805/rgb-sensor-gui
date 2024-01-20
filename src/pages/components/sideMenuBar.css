@@ -1,0 +1,121 @@
+#sideMenuBar > * {
+    position: absolute; /* Position them relative to the browser window */
+    right: -120px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 140px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    background-color: black;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the top right and bottom right side */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#sideMenuBar :not(:first-child):hover { /*Hover all the elements except the first one*/
+    right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#home {
+    top: 0;
+    height: 15px;
+    text-indent: -15px;
+    background-color: rgb(138, 104, 217);
+    border-width: 0cm;
+}
+
+#device-connect {
+    top: 20px;
+    height: 60px;
+}
+
+#about {
+    top: 80px;
+    height: 60px;
+}
+
+.aboutButton {
+    width: 85px;
+    height: 45px;
+    border-width: 0cm;
+    color: white;
+    background: transparent;
+}
+  
+#repository {
+    top: 140px;
+}
+
+#repository >* {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+.openButton {
+    background: url('./Icons/serial-port-svgrepo-com-2.svg') no-repeat right;
+    background-size: 100%;
+    width: 85px;
+    height: 45px;
+    border-width: 0cm;
+}
+
+.openButton:hover {
+    background: url('./Icons/serial-port-svgrepo-com.svg') no-repeat right;
+    background-size: 100%;
+    
+}
+
+#device-explorer-tab {
+    height: 150; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 20px;
+    right: 20px;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    border-radius: 5px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.device-explorer-wrapper {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.reload-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 50px;
+    border-width: 0cm;
+    color: white;
+    background-color: transparent; 
+}
+
+.reload-btn-wrapper {
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border-width: 0cm;
+    color: white;
+    background-color: transparent;
+}

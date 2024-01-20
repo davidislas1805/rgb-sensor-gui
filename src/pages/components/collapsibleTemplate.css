@@ -1,0 +1,48 @@
+/*  https://www.svgrepo.com 
+    https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp
+    https://medium.com/swlh/how-to-make-a-side-navigation-bar-in-reactjs-c90747f3410c
+*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+    border-radius: 15px;
+}
+
+.divCollapseWrapper {
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.openButton {
+    background: url('./Icons/serial-port-svgrepo-com.svg') no-repeat right;
+    background-size: 100%;
+    /* display: inline-block; */
+    width: 85px;
+    height: 45px;
+    /* border-width: 0cm; */
+}
+
+.openButton svg {
+    width: 85px;
+    height: 45px;
+}
+
+.openButton:hover {
+    background: url('./Icons/serial-port-svgrepo-com-2.svg') no-repeat right;
+    background-size: 100%;
+}
+
+.reloadButtonWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.divWrapper > * {
+    display: inline-block;
+}
